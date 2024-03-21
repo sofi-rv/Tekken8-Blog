@@ -5,7 +5,11 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
-.background-image {
-    width: 100%;
-    height: 100%;
+.Recomendations {
+    font-family:"Big Shoulders Text", sans-serif;
+    text-shadow: 2px 2px 8px #000000;
 }
+/* .Articles{
+    overflow: hidden;
+    overflow-x: scroll;
+} */
