@@ -49,8 +49,12 @@ export const Home = () => {
 				<div>
 					<h1 className="text-light container p-5 Recomendations">Recomendaciones</h1>
 				</div>
-				<div className="Articles container pb-5 d-flex"> 
-				<Card />, <Card />, <Card />, <Card />, <Card />
+				<div className="Articles container pb-5">
+					<div className="overflow-auto">
+						<div className="row d-flex flex-row flex-nowrap">
+							<Card />, <Card />, <Card />, <Card />, <Card />
+						</div>
+					</div>
 				</div>
 
 			</div>
