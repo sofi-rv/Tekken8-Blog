@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Card = () =>{
   return (
   
@@ -9,8 +9,8 @@ const Card = () =>{
     <h5 className="card-title">Card title</h5>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <div className="button-cards">
-    {/* <Link to="/detailCards" className="btn btn-outline-primary">Learn More!</Link> */}
-     <a href="#" className="btn btn-primary">Go somewhere</a> 
+    <Link to="/detailCards"><button className="btn btn-primary">Go somewhere</button> </Link>
+     
     </div>
   </div>
 </div>
