@@ -52,7 +52,7 @@ export const Home = () => {
 			</div>
 
 			<div className="Body-trailer d-flex justify-content-center" style={{ background: "rgba(33, 33, 33, 1)" }}>
-				<iframe src="https://www.youtube.com/embed/ToKJfywbe1o" className="m-5" style={{ width: "500px", height: "260px" }}></iframe>
+				<iframe src="https://www.youtube.com/embed/ToKJfywbe1o" className="m-5" style={{ width: "600px", height: "300px" }}></iframe>
 			</div>
 
 			<div className="Recomendations-Body" style={{ backgroundImage: `url(${tekkenBackgroundUrl})` }}>
