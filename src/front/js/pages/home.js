@@ -47,6 +47,9 @@ export const Home = () => {
 					<div className="Colum8 d-flex">
 						<Card />, <Card />, <Card />, <Card />
 					</div>
+					<div className="Colum9 d-flex">
+						<Card />
+					</div>
 
 				</div>
 			</div>
