@@ -8,7 +8,18 @@ import Card from "../component/cards.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
+const infoCard = [{
+	imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFkX9X1jROC2r-5IcmIopMLoPlCN5VEhexx4KnlSyKA&s",
+	titulo: "Jin Kazama",
+	descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+}, 
+{
+	imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFkX9X1jROC2r-5IcmIopMLoPlCN5VEhexx4KnlSyKA&s",
+	titulo: "Leroy Smith",
+	descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+}
 
+]
 	return (
 		<>
 			<div className="Body-Cards" style={{ backgroundImage: `url(${tekkenBackgroundVerticalUrl})`,
@@ -23,9 +34,14 @@ export const Home = () => {
       /* Otros estilos según sea necesario */
     }}>
 				<div className="container Cards">
+					{infoCard.map((infoCard,index) => { 
+						return (
+
 					<div className="Colum1 d-flex">
-						<Card />, <Card />, <Card />, <Card />
+						<Card key={index} imagen = {infoCard.imagen} titulo = {infoCard.titulo} descripcion = {infoCard.descripcion}/>
 					</div>
+					)
+				})}
 					<div className="Colum2 d-flex">
 						<Card />, <Card />, <Card />, <Card />
 					</div>

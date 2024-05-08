@@ -17,7 +17,7 @@ export const DetailCards= () => {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center', // Alinear la imagen al centro
                 /* Otros estilos según sea necesario */
-            }}> </div>
+            }}></div>
         </>
     );
 };
