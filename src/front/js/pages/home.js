@@ -9,14 +9,164 @@ import Card from "../component/cards.jsx";
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 const infoCard = [{
-	imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFkX9X1jROC2r-5IcmIopMLoPlCN5VEhexx4KnlSyKA&s",
+	imagen: "https://static.wikia.nocookie.net/tekken/images/d/d9/T8_-_Jin_Render.jpg/revision/latest?cb=20221209093239&path-prefix=en",
 	titulo: "Jin Kazama",
-	descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 }, 
 {
-	imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFkX9X1jROC2r-5IcmIopMLoPlCN5VEhexx4KnlSyKA&s",
+	imagen: "https://static.wikia.nocookie.net/tekken/images/f/f0/Devil_Jin_TK8_Render.jpg/revision/latest?cb=20240126004007&path-prefix=en",
+	titulo: "Devil Jin",
+}, 
+{
+	imagen: "https://static.wikia.nocookie.net/tekken/images/b/b1/Tekken_8_-_Asuka_Render.jpg/revision/latest?cb=20230425185037&path-prefix=en",
+	titulo: "Jun Kazama",
+
+},
+{
+	imagen: "https://static.wikia.nocookie.net/tekken/images/f/f4/Tekken8-kazuya-mishima-render.png/revision/latest?cb=20230928151903&path-prefix=es",
+	titulo: "Kasuya Mishima",
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Asuka Kazama",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Eddy Gordo",
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Nina Wlliams",
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Paul Phoenix",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Marshall Law",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "King",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Lars Alexandersson",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Jack-8",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Ling Xiaoyu",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
 	titulo: "Leroy Smith",
-	descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Lili",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Hwoarang",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Bryan Fury",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Claudio Serafino",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Raven",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Azucena Milagros Ortiz Castillo",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Feng Wei",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Yoshimitsu",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Steve Fox",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Leo",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Sergei Dragunov",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Kuma",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Shaheen",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Panda",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Zafina",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Lee Chaolan",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Alisa Bosconovitch",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Victor Chevalier",
+
+},
+{
+	imagen: "https://preview.redd.it/eddy-gordo-tekken-8-render-v0-wh32gt2e29rc1.png?auto=webp&s=e26b5f10144d669a6d59873f53f622c5c799f526",
+	titulo: "Reina",
+
 }
 
 ]
@@ -42,30 +192,6 @@ const infoCard = [{
 					</div>
 					)
 				})}
-					<div className="Colum2 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum3 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum4 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum5 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum6 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum7 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum8 d-flex">
-						<Card />, <Card />, <Card />, <Card />
-					</div>
-					<div className="Colum9 d-flex">
-						<Card />
-					</div>
 
 				</div>
 			</div>
