@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/cards.css"
 const Card = (props) => {
   return (
 
@@ -9,8 +10,6 @@ const Card = (props) => {
         <h5 className="card-title">{props.titulo}</h5>
         <div className="button-cards">
           <Link to="/detailCards"><button className="btn btn-primary">Go somewhere</button> </Link>
-          
-
         </div>
       </div>
     </div>
