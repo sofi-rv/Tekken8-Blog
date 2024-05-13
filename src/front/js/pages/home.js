@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 // import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
+import "../../styles/cards.css";
 import tekkenBackgroundUrl from "../../img/tekken8-background.png";
 import tekkenBackgroundVerticalUrl from "../../img/tekken8-backgroundvertical.png"
 import Card from "../component/cards.jsx";
@@ -13,7 +14,7 @@ const infoCard = [{
 	titulo: "Jin Kazama",
 }, 
 {
-	imagen: "https://static.wikia.nocookie.net/tekken/images/f/f0/Devil_Jin_TK8_Render.jpg/revision/latest?cb=20240126004007&path-prefix=en",
+	imagen: "https://www.mordeo.org/files/uploads/2024/01/Devil-Jin-Tekken-8-scaled.webp",
 	titulo: "Devil Jin",
 }, 
 {
@@ -183,11 +184,11 @@ const infoCard = [{
       backgroundPosition: 'center', // Alinear la imagen al centro
       /* Otros estilos según sea necesario */
     }}>
-				<div className="container Cards">
+				<div className="container">
 					{infoCard.map((infoCard,index) => { 
 						return (
 
-					<div className="Colum1 d-flex">
+					<div>
 						<Card key={index} imagen = {infoCard.imagen} titulo = {infoCard.titulo} descripcion = {infoCard.descripcion}/>
 					</div>
 					)
@@ -208,7 +209,7 @@ const infoCard = [{
 				<div className="Articles container pb-5">
 					<div className="overflow-auto">
 						<div className="row d-flex flex-row flex-nowrap">
-							<Card />, <Card />, <Card />, <Card />, <Card />
+							{/* <Card />, <Card />, <Card />, <Card />, <Card /> */}
 						</div>
 					</div>
 				</div>
