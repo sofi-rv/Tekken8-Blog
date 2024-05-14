@@ -1,4 +1,4 @@
-.Card-Hover:hover{
+.Card-Hover:hover img{
     transform: scale(1.2);
     opacity: 0.5;
   }
