@@ -1,9 +1,4 @@
-
 .Recomendations {
     font-family:"Big Shoulders Text", sans-serif;
     text-shadow: 2px 2px 8px #000000;
 }
-.Colum1 {
-    display: flex;
-    flex-wrap: wrap;
-  }
