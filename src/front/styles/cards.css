@@ -1,9 +1,12 @@
-img:hover{
+.Card-Hover:hover{
     transform: scale(1.2);
-    background-color: red;
+    opacity: 0.5;
   }
-  card-title {
-    
+  .card-body {
+    position: absolute;
+   
   }
+.card-title{
+color:white;
 
-  
+}
