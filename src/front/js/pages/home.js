@@ -173,10 +173,14 @@ export const Home = () => {
 
 	]
 
-	const infoRecomendations = [{
-		imagen: "https://image.api.playstation.com/vulcan/ap/rnd/202212/1621/rCvLik1PKDSoCaEvTIx42H3Q.png",
-		titulo: "Articulo 1"
-	}]
+	const infoRecomendations = [
+		{
+		imagen: "https://static.wikia.nocookie.net/tekkenlatino/images/8/8d/Tekken_1_game_coverr.jpg/revision/latest/scale-to-width-down/300?cb=20091206004636&path-prefix=es",
+		titulo: "Saga Tekken",
+		descripcion: "Conoce más sobre todos los juegos de la saga Tekken",
+		url_articulo: "https://tekken.fandom.com/es/wiki/Saga_Tekken"
+	}
+]
 	return (
 		<>
 			<div className="Body-Cards" style={{
@@ -215,17 +219,17 @@ export const Home = () => {
 				<div>
 					<h1 className="text-light container p-5 Recomendations">Recomendaciones</h1>
 				</div>
-				<div className="Articles container pb-5">
+				<div className="container pb-5">
 					<div className="overflow-auto">
 						<div className="row d-flex flex-row flex-nowrap">
-							{/* {infoRecomendations.map((infoRecomendations, index) => {
+							 {infoRecomendations.map((infoRecomendations, index) => {
 								return (
 
 
-									<RecomendationsCard key={index} imagen={infoRecomendations.imagen} titulo={infoRecomendations.titulo} />
+									<RecomendationsCard key={index} imagen={infoRecomendations.imagen} titulo={infoRecomendations.titulo} descripcion={infoRecomendations.descripcion} url_articulo={infoRecomendations.url_articulo}/>
 
 								)
-							})} */}
+							})} 
 						</div>
 					</div>
 				</div>
