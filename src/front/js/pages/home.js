@@ -5,11 +5,12 @@ import "../../styles/home.css";
 import "../../styles/cards.css";
 import tekkenBackgroundUrl from "../../img/tekken8-background.png";
 import tekkenBackgroundVerticalUrl from "../../img/tekken8-backgroundvertical.png"
-import  CharactersCard from "../component/charactersCard.jsx";
+import CharactersCard from "../component/charactersCard.jsx";
+import RecomendationsCard from "../component/recomendationsCard.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
-	const infoCard = [{
+	const infoCharacters = [{
 		imagen: "https://static.wikia.nocookie.net/tekken/images/d/d9/T8_-_Jin_Render.jpg/revision/latest?cb=20221209093239&path-prefix=en",
 		titulo: "Jin Kazama",
 	},
@@ -171,6 +172,11 @@ export const Home = () => {
 	}
 
 	]
+
+	const infoRecomendations = [{
+		imagen: "https://image.api.playstation.com/vulcan/ap/rnd/202212/1621/rCvLik1PKDSoCaEvTIx42H3Q.png",
+		titulo: "Articulo 1"
+	}]
 	return (
 		<>
 			<div className="Body-Cards" style={{
@@ -187,11 +193,11 @@ export const Home = () => {
 			}}>
 				<div className="container">
 					<div className="row justify-content-center">
-						{infoCard.map((infoCard, index) => {
+						{infoCharacters.map((infoCharacters, index) => {
 							return (
 
 
-								<CharactersCard key={index} imagen={infoCard.imagen} titulo={infoCard.titulo} descripcion={infoCard.descripcion} />
+								<CharactersCard key={index} imagen={infoCharacters.imagen} titulo={infoCharacters.titulo} descripcion={infoCharacters.descripcion} />
 
 							)
 						})}
@@ -212,7 +218,14 @@ export const Home = () => {
 				<div className="Articles container pb-5">
 					<div className="overflow-auto">
 						<div className="row d-flex flex-row flex-nowrap">
-							{/* <Card />, <Card />, <Card />, <Card />, <Card /> */}
+							{/* {infoRecomendations.map((infoRecomendations, index) => {
+								return (
+
+
+									<RecomendationsCard key={index} imagen={infoRecomendations.imagen} titulo={infoRecomendations.titulo} />
+
+								)
+							})} */}
 						</div>
 					</div>
 				</div>
