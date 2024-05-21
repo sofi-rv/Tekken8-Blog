@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 // import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
-import "../../styles/cards.css";
 import tekkenBackgroundUrl from "../../img/tekken8-background.png";
 import tekkenBackgroundVerticalUrl from "../../img/tekken8-backgroundvertical.png"
 import CharactersCard from "../component/charactersCard.jsx";
@@ -177,8 +176,20 @@ export const Home = () => {
 		{
 		imagen: "https://static.wikia.nocookie.net/tekkenlatino/images/8/8d/Tekken_1_game_coverr.jpg/revision/latest/scale-to-width-down/300?cb=20091206004636&path-prefix=es",
 		titulo: "Saga Tekken",
-		descripcion: "Conoce más sobre todos los juegos de la saga Tekken",
+		descripcion: "Conoce más sobre todos los juegos de la saga Tekken, en orden cronológico",
 		url_articulo: "https://tekken.fandom.com/es/wiki/Saga_Tekken"
+	},
+	{
+		imagen: "https://image.api.playstation.com/vulcan/ap/rnd/202308/0312/aff71a0ced271048f5079b1fcf715bcb45110efc13e9704a.png",
+		titulo: "La saga Tekken ha vendido 57 millones de copias",
+		descripcion: "Shuhei Yoshida y Katsuhiro Harada, revelan la cantidad de ventas de la Saga Tekken",
+		url_articulo: "https://www.mundodeportivo.com/alfabeta/bandai-namco/la-saga-tekken-ha-vendido-57-millones-de-copias"
+	},
+	{
+		imagen: "https://m.media-amazon.com/images/I/71Nk-CvsqrL._AC_UF894,1000_QL80_.jpg",
+		titulo: "TEKKEN: Blood Vengeance",
+		descripcion: "Tekken: Blood Vengeance es una película de animación 3D de acción dirigida por Youchi Mori estrenada el 3 de septiembre de 2011 en Japón. Se basa en los hechos que suceden en Tekken 6",
+		url_articulo: "https://youtu.be/H5VwQ73okmg"
 	}
 ]
 	return (
@@ -196,6 +207,9 @@ export const Home = () => {
 				/* Otros estilos según sea necesario */
 			}}>
 				<div className="container">
+				<div>
+					<h1 className="text-light text-center container p-5 Fighters">Luchadores</h1>
+				</div>
 					<div className="row justify-content-center">
 						{infoCharacters.map((infoCharacters, index) => {
 							return (
