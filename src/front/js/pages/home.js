@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import tekken8ImageUrl from "../../img/Tekken8-fondo.png";
 import "../../styles/home.css";
+import CharactersCard from "../component/charactersCard.jsx";
+import RecomendationsCard from "../component/recomendationsCard.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
