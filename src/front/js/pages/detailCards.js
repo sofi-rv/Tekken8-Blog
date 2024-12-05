@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from "react";
 import { Context } from "../store/appContext";
 import { useParams } from "react-router-dom";
-import tekken8ImageUrl from "../../img/Tekken8-fondo.png";
+import tekkenBackgroundUrl from "../../img/tekken8-fondo.png";
 
 export const DetailCards= () => {
     const {store, actions} = useContext(Context)
